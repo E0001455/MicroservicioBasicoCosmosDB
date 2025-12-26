@@ -35,10 +35,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      AZURE_COSMOS_ENDPOINT: ${{ secrets.AZURE_COSMOS_ENDPOINT }}
-      AZURE_COSMOS_KEY: ${{ secrets.AZURE_COSMOS_KEY }}
-      AZURE_COSMOS_DATA_BASE: ${{ secrets.AZURE_COSMOS_DATA_BASE }}
 
     steps:
       - uses: actions/checkout@v4
